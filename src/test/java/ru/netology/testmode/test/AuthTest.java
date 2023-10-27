@@ -84,6 +84,6 @@ class AuthTest {
         $("[data-test-id=action-login]").click();
 
         $("[data-test-id=error-notification]").shouldBe(visible, Duration.ofMillis(500));
-        $("[data-test-id=error-notification] .notification__content").shouldHave(exactText("Ошибка! dНеверно указан логин или пароль"));
+        $("[data-test-id=error-notification] .notification__content").shouldHave(exactText("Ошибка! Неверно указан логин или пароль"));
     }
 }
